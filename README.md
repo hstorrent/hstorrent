@@ -17,9 +17,10 @@ BitTorrent library in Haskell. It has few main goals:
 * Sane API – it is intended to be a library that others can build upon
   rather than a component for a specific client.
 
-## BEPs
+## BEPs/features
 
-Below is a table of BEPs and the status of their support.
+Below is a table of BEPs and any other extensions and the status of
+their support.
 
 <table border="1">
 <tr>
@@ -67,6 +68,7 @@ Below is a table of BEPs and the status of their support.
 <tr><td>41</td> <td>UDP Tracker Protocol Extensions</td> <td>✗</td></tr>
 <tr><td>42</td> <td>DHT Security Extension</td> <td>✗</td></tr>
 <tr><td>8</td> <td>Tracker Peer Obfuscation</td> <td>?</td></tr>
+<tr><td>✗</td> <td>[BitTorrent protocol encryption][msepe]</td> <td>✗</td></tr>
 
 </table>
 
@@ -114,3 +116,4 @@ Please add yourself to AUTHORS!
 [twbittorrent]: https://wiki.theory.org/BitTorrentSpecification
 [twtracker]: https://wiki.theory.org/BitTorrent_Tracker_Protocol
 [iterateetracker]: https://github.com/iteratee/haskell-tracker
+[msepe]: https://en.wikipedia.org/wiki/BitTorrent_protocol_encryption
