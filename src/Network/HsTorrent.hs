@@ -4,7 +4,7 @@
 -- |
 -- Module      :  Network.HsTorrent
 -- Copyright   :  AUTHORS
--- License     :  GPL-3
+-- License     :  BSD3
 -- Maintainer  :  https://github.com/hstorrent
 -- Stability   :  experimental
 -- Portability :  portable
