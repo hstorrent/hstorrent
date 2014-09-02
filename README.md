@@ -29,9 +29,6 @@ their support.
 <th>Status</th>
 </tr>
 
-<tr><td>0</td> <td>Index of BitTorrent Enhancement Proporsals</td> <td>✗</td></tr>
-<tr><td>1</td> <td>The BEP Process</td> <td>✗</td></tr>
-<tr><td>2</td> <td>Sample reStructured Text BEP Template</td> <td>✗</td></tr>
 <tr><td>3</td> <td>The BitTorrent Protocol Specification</td> <td>✗</td></tr>
 <tr><td>4</td> <td>Known Number Allocations</td> <td>✗</td></tr>
 <tr><td>20</td> <td>Peer ID Conventions</td> <td>✗</td></tr>
