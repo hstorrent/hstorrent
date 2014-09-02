@@ -19,8 +19,16 @@ source-repository head
 library
   exposed-modules:
     Network.HsTorrent
+    Network.HsTorrent.BinaryStrict
+    Network.HsTorrent.Handshake
 
-  build-depends:       base >=4.5 && <5
+  build-depends:
+      base >=4.5 && <5
+    , binary
+    , bytestring
+    , data-default
+    , lens
+
   hs-source-dirs:      src
   default-language:    Haskell2010
 
@@ -32,13 +40,18 @@ test-suite spec
   ghc-options: -Wall
 
   other-modules:
+    Network.HsTorrent.HandshakeSpec
     Network.HsTorrent.MainSpec
 
   build-depends:
       base
+    , binary
+    , bytestring
+    , data-default
     , hspec
+    , lens
     , QuickCheck == 2.*
-
+    , quickcheck-instances
 
 benchmark bench
   type:             exitcode-stdio-1.0
