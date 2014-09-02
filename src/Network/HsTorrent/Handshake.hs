@@ -21,7 +21,9 @@ import Control.Lens
 import Control.Applicative
 import Control.Monad
 import Data.Binary
-import Data.ByteString (ByteString, length, pack, unpack)
+import Data.Binary.Get (getByteString)
+import Data.Binary.Put (putByteString)
+import Data.ByteString (ByteString, length, pack)
 import Data.Char (ord)
 import Data.Default (Default(..))
 import Network.HsTorrent.BinaryStrict
@@ -99,13 +101,11 @@ mkHandshake i = Handshake { _hPstr = def
 putBS ∷ ByteString → Put
 putBS b = do
   put . (fromIntegral ∷ Int → Word8) $ Data.ByteString.length b
-  mapM_ put . unpack $ b
+  putByteString b
 
 -- | Dual of 'putBS'.
 getBS ∷ Get ByteString
-getBS = do
-  (l ∷ Word8) ← get
-  pack <$> replicateM (fromIntegral l) get
+getBS = get >>= getByteString . (fromIntegral ∷ Word8 → Int)
 
 -- | Turns a 'Char' into 'Word8'. If the char is outside the Word8, it
 -- gets truncated.
