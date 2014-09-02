@@ -41,7 +41,7 @@ newtype TwentyBytes = TwentyBytes { _unTwenty ∷ ( EightBytes
                                                  )
                                   } deriving (Show, Eq)
 
--- | 20 reserved bytes
+-- | 8 reserved bytes
 newtype Reserved = Reserved { _reserved ∷ EightBytes }
                  deriving (Show, Eq)
 
