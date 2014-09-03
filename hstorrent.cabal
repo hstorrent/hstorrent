@@ -21,6 +21,7 @@ library
     Network.HsTorrent
     Network.HsTorrent.BinaryStrict
     Network.HsTorrent.Handshake
+    Network.HsTorrent.Message
 
   build-depends:
       base >=4.5 && <5
@@ -42,6 +43,7 @@ test-suite spec
   other-modules:
     Network.HsTorrent.HandshakeSpec
     Network.HsTorrent.MainSpec
+    Network.HsTorrent.MessageSpec
 
   build-depends:
       base
