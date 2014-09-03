@@ -46,7 +46,6 @@ test-suite spec
 
   other-modules:
     Network.HsTorrent.HandshakeSpec
-    Network.HsTorrent.MainSpec
     Network.HsTorrent.MessageSpec
     Network.HsTorrent.TorrentParserSpec
 
@@ -76,4 +75,3 @@ benchmark bench
       base >=4.5 && <5
     , criterion
     , random
-
