@@ -18,7 +18,7 @@ main = hspec spec
 
 spec ∷ Spec
 spec = do
-  describe "serialisation" $ do
+  describe "Handshake serialisation" $ do
     describe "Protocol" $ do
       -- We can encode and decode without loss of information
       prop "decode . encode ≡ id" $ \(Pr p) →
