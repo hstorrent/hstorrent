@@ -10,7 +10,7 @@ import qualified Data.ByteString                 as B
 import           System.Directory                (getDirectoryContents)
 import           System.FilePath                 (takeExtension, (</>))
 import           Test.Hspec
-import           Test.Hspec.HUnit
+import           Test.Hspec.Contrib.HUnit
 import           Test.Hspec.QuickCheck
 import           Test.HUnit
 

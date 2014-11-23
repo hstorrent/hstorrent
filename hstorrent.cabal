@@ -57,7 +57,8 @@ test-suite spec
     , data-default
     , directory
     , filepath
-    , hspec
+    , hspec >= 2.0.1
+    , hspec-contrib
     , hstorrent
     , HUnit
     , lens
